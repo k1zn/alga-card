@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-class Alga {
+export default class Alga {
   constructor(number) {
     if(!number) throw new Error('Card number is required.');
     this.number = number.split(' ').join('');
@@ -19,6 +19,4 @@ class Alga {
     return (/value=(.+) id="balance"/).exec(text)?.[1] * 1 || -1;
   }
 
-}
-
-module.exports = Alga;
+};
