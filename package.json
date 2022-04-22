@@ -14,6 +14,7 @@
     "alga"
   ],
   "author": "k1zn",
+  "type": "module",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/k1zn/alga-card/issues"
