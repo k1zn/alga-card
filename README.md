@@ -8,7 +8,7 @@ $ npm i alga-card
 
 ## Использование
 ```javascript
-const Alga = require('alga-card')
+import Alga from 'alga-card';
 ```
 
 ## Примеры
