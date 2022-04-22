@@ -26,8 +26,8 @@ const card = new Alga('9643100203317283320')
 
 ```javascript
 //...
-const balance = await card.getBalance()
-if (balance === -1) throw new Error('Ошибка! Карты не существует.')
+const balance = await card.getBalance();
+if (balance === -1) throw new Error('Ошибка! Карты не существует.');
 console.log('Привет! Баланс карты: ' + balance)
 ```
 
