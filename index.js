@@ -21,3 +21,5 @@ class Alga {
   }
 
 }
+
+module.exports = Alga;
