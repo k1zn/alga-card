@@ -17,7 +17,7 @@ class Alga {
     })
     let text = await req.text();
 
-    return (/value=(.+) id="balance"/).exec(text)?.[1] || "-1"
+    return (/value=(.+) id="balance"/).exec(text)?.[1] * 1 || -1;
   }
 
 }
