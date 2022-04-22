@@ -1,6 +1,6 @@
 {
   "name": "alga-card",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "wrapper method for alga card to get balance",
   "main": "index.js",
   "scripts": {
