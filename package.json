@@ -1,0 +1,25 @@
+{
+  "name": "alga-card",
+  "version": "1.0.0",
+  "description": "wrapper method for alga card to get balance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k1zn/alga-card.git"
+  },
+  "keywords": [
+    "vk"
+  ],
+  "author": "k1zn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k1zn/alga-card/issues"
+  },
+  "homepage": "https://github.com/k1zn/alga-card#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.3"
+  }
+}
