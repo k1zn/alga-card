@@ -3,8 +3,7 @@ import fetch from 'node-fetch';
 class Alga {
   constructor(number) {
     if(!number) throw new Error('Card number is required.');
-    this.number = number?.split ? number.split(' ').join('') : number;
-    console.log(this.number)
+    this.number = number.split(' ').join('');
   }
 
   async getBalance() {
