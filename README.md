@@ -18,8 +18,6 @@ const Alga = require('alga-card')
 const card = new Alga('9643 10020 33172 83320') 
 // или
 const card = new Alga('9643100203317283320')
-// или
-const card = new Alga(9643100203317283320)
 
 //...
 ```
