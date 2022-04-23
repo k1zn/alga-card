@@ -11,8 +11,8 @@ export default {
       body: `cardnumber=${number.split(' ').join('')}`,
     })
     let text = await req.text();
-    let bal = (/value=(.+) id="balance"/).exec(text)?.[1];
-    return bal ? bal * 1 : -1;
+    let bal = (/value=(.+) id="balance"/).exec(text)?.[1] * 1;
+    return isNaN(bal) ? -1 : bal;
   }
 
 };
