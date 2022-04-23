@@ -16,6 +16,6 @@ import Alga from 'alga-card';
 let balance = await Alga.getBalance("9643100203317283320")
 console.log(balance) // 0
 
-let anotherBalance = await Alga.getBalance("9643 10020 33172 22800")
+let anotherBalance = await Alga.getBalance("9643100203317222800")
 console.log(anotherBalance) // -1
 ```

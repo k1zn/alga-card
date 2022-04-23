@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-export default class Alga {
+export default {
 
   async getBalance(number) {
     let req = await fetch('https://pay.brsc.ru/Alga.pay/BalanceOnTheCard.php', {
@@ -11,8 +11,8 @@ export default class Alga {
       body: `cardnumber=${number.split(' ').join('')}`,
     })
     let text = await req.text();
-
-    return (/value=(.+) id="balance"/).exec(text)?.[1] * 1 || -1;
+    let bal = (/value=(.+) id="balance"/).exec(text)?.[1];
+    return bal ? bal * 1 : -1;
   }
 
 };
