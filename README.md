@@ -3,7 +3,7 @@
 
 ## Установка
 ```bash
-$ npm i alga-card
+npm i alga-card
 ```
 
 ## Использование
