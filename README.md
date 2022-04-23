@@ -3,28 +3,19 @@
 
 ## Установка
 ```bash
-npm i alga-card
+$ npm i alga-card
 ```
 
 ## Использование
+
+Вы можете передавать номер карты в формате строки как с пробелами, так и без них. Если возвращенный баланс равен -1, то карты не существует.
+
 ```javascript
 import Alga from 'alga-card';
+
+let balance = await Alga.getBalance("9643100203317283320")
+console.log(balance) // 0
+
+let anotherBalance = await Alga.getBalance("9643100203317222800")
+console.log(anotherBalance) // -1
 ```
-
-## Примеры
-
-Чтобы объявить карту, можно использовать значения как с пробелами, так и без:
-```javascript
-const card = new Alga('9643 10020 33172 83320') 
-// или
-const card = new Alga('9643100203317283320')
-```
-
-Чтобы получить баланс карты, нужно использовать функцию getBalance(). Если случится ошибка во время получения баланса, библиотека вернет баланс -1. Это означает, что скорее всего, карты не существует:
-
-```javascript
-const balance = await card.getBalance();
-if (balance === -1) console.log('Карты не существует!');
-else console.log('Привет! Баланс карты: ' + balance);
-```
-
